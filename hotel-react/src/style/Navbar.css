@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.navbar.active{
+    background: #020617;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navbar li{
+    cursor: pointer;
+
+}
+.navbar li:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    color: purple;
+}

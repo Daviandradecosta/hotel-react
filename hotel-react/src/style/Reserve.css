@@ -1,0 +1,122 @@
+/* Reserve.css */
+
+.reserve-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card superior */
+.reserve.card {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.reserve.card h2 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.reserve.card p {
+  color: #475569;
+  font-size: 25px;
+}
+
+/* Formulário */
+.reserve-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+.reserve-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Inputs */
+.reserve-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.reserve-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
+
+/* Grid para datas */
+.reserve-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.reserve-grid div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Botão */
+.reserve-form button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reserve-form button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .reserve-grid {
+    flex-direction: column;
+  }
+}
+  .reserve-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+  resize: vertical; /* permite aumentar o tamanho verticalmente */
+}
+
+.reserve-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
